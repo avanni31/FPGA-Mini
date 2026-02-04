@@ -8,13 +8,13 @@ module GPIO_TB;
   wire[31:0] gpio out;
 
   GPIO dut (
-    clk (clk),
-    reset (reset),
-    we(we),
-    re(re),
-    data_in(data_in),
-    data_out (data_out),
-    gpio_out (gpio_out)
+    .clk (clk),
+    .reset (reset),
+    .we(we),
+    .re(re),
+    .data_in(data_in),
+    .data_out (data_out),
+    .gpio_out (gpio_out)
   );
   
   always #5 clk= ~clk;
